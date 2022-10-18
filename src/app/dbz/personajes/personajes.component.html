@@ -1,0 +1,11 @@
+<div class="col">
+    <h3>Escuderias</h3>
+    <hr>
+
+    <ul>
+        <li *ngFor="let personaje of person">
+            {{personaje.nombre}}- {{personaje.potencia | number}}
+        </li>
+        
+    </ul>
+</div>
