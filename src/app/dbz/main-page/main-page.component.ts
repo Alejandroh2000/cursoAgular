@@ -19,22 +19,16 @@ export class MainPageComponent {
     }
   ]
 
-  nuevo: Personajes={
-    nombre: '',
-    potencia: 0
+  nuevo: Personajes ={
+    nombre: 'Alpine',
+    potencia: 20000
+    
   }
 
- agregar(){
-
-  if(this.nuevo.nombre.trim().length ===0){return}
-
-  console.log(this.nuevo)
-
-  this.person.push(this.nuevo);
-  this.nuevo={
-    nombre: '',
-    potencia: 0
-  }
-
- }
-}
+  agregarPersonaje(argumento:Personajes){
+    this.person.push(argumento)
+    console.log('Main page Component');
+  
+  };
+  
+};

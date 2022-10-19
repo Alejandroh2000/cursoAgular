@@ -11,6 +11,7 @@ import { HeroesModule } from './heroes/heroes.module';
   declarations: [
     AppComponent,
     
+    
   ],
   imports: [
     BrowserModule,
