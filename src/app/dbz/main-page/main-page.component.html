@@ -2,11 +2,18 @@
 <hr>
 
  <div class="row">
-    <app-personajes></app-personajes>
- <!--    -->
+    
+    <div class="col"> 
+        <app-personajes [person]="person">
 
-    <div class="col">
-        <h3>Agregar</h3>
+        </app-personajes>
+
+
+
+    </div>
+
+       <div class="col"> 
+        <h3>Agregar <small>{{nuevo.nombre}}</small></h3>
         <hr>
 
         <form (ngSubmit)="agregar()">

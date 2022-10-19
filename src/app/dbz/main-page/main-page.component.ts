@@ -1,10 +1,5 @@
 import { Component } from '@angular/core';
-
-interface Personajes{
-  nombre: string;
-  potencia: number;
-
-}
+import { Personajes } from '../interface/f1.interface';
 
 @Component({
   selector: 'app-main-page',

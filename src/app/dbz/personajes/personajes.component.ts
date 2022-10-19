@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Personajes } from '../interface/f1.interface';
 
 @Component({
   selector: 'app-personajes',
@@ -7,6 +8,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonajesComponent {
 
-  
+  @Input() person: Personajes[] = [];
 
 }
