@@ -5,7 +5,7 @@ import { Personajes } from "../interface/f1.interface";
 @Injectable()
 export class Dbzservices{
     
-    person: Personajes[]=[
+   private _person: Personajes[]=[
         {
           nombre: 'Redbull',
           potencia: 15000
@@ -14,7 +14,11 @@ export class Dbzservices{
           nombre: 'Ferrari',
           potencia: 3000
         }
-      ]
+      ];
+
+      get personajes(){
+        return [...this._person]
+      }
 
     constructor(){
         console.log('servicio inicializado');

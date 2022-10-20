@@ -17,14 +17,12 @@ export class MainPageComponent {
     
   }
 
-  agregarPersonaje(argumento:Personajes){
-    this.person.push(argumento)
-    console.log('Main page Component');
-  
-  };
+  person: Personajes[]=[];
 
-  constructor(private dbzService: Dbzservices){
+ 
 
+  constructor(){
+    
   }
   
 };
