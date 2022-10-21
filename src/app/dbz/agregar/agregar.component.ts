@@ -20,7 +20,7 @@ export class AgregarComponent {
   }
 
 
-  @Output() OnNuevoPersonaje: EventEmitter <Personajes>= new EventEmitter();
+  // @Output() OnNuevoPersonaje: EventEmitter <Personajes>= new EventEmitter();
 
  agregar(){
   if(this.nuevo.nombre.trim().length ===0){return;}

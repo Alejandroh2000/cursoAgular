@@ -15,9 +15,10 @@ export class PersonajesComponent {
     return this.dbzService.personajes;
   }
 
+  
+
   constructor(private dbzService: Dbzservices){
     
   }
-
 
 }

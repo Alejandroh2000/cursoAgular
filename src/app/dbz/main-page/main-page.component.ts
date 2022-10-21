@@ -8,9 +8,7 @@ import { Dbzservices } from '../services/dbz.service';
 
 })
 export class MainPageComponent {
-
   
-
   nuevo: Personajes ={
     nombre: 'Alpine',
     potencia: 20000
